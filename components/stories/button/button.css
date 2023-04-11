@@ -1,0 +1,36 @@
+
+
+.storybook-button--primary {
+  @apply p-2.5 font-semibold text-white rounded-lg !bg-color-primary  hover:!bg-color-primary-opacity focus:!bg-color-primary-opacity;
+}
+.storybook-button--secondary {
+  @apply p-2.5 font-semibold rounded-lg text-color-primary border-color-primary border-2  hover:bg-color-secondary-opacity focus:bg-color-secondary-opacity;
+  
+}
+.storybook-button--terciary {
+  @apply p-2.5 text-color-primary  rounded-lg bg-transparent  hover:bg-color-secondary-opacity focus:bg-color-secondary-opacity  ;
+}
+.storybook-button--plus {
+  @apply p-2.5 font-semibold text-white rounded-lg  !bg-color-primary-focus hover:shadow-lg hover:delay-300 duration-300 hover:!bg-color-primary-opacity focus:bg-color-primary-opacity;
+}
+
+.storybook-button--plus img {
+  @apply  w-3 h-3 mr-2 inline-block;
+  margin-bottom: 3px;
+}
+
+.storybook-button--small {
+  @apply w-32;
+  font-size:14px ;
+
+}
+.storybook-button--medium {
+  @apply w-52  ;
+  font-size:14px ;
+
+}
+.storybook-button--large {
+  @apply w-64 ;
+  font-size: 14px;
+  
+}

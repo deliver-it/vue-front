@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.storybook-typography--large {
+    @apply text-mov-lg ;
+    
+}
+.storybook-typography--medium {
+    @apply text-mov-md ;
+}
+
+.storybook-typography--small {
+    @apply text-mov-sm ;
+}
+
+.storybook-typography--large-headline {
+    @apply text-mov-headline-lg font-bold;
+}
+
+.storybook-typography--medium-headline {
+    @apply text-mov-headline-md font-bold;
+}
+
+.storybook-typography--small-headline {
+    @apply text-mov-headline-sm font-bold;
+}
+
+.storybook-typography--large-body {
+    @apply text-mov-body-lg ;
+}
+
+.storybook-typography--medium-body {
+    @apply text-mov-body-md ;
+}
+
+.storybook-typography--small-body {
+    @apply text-mov-body-sm ;
+}
+
+.storybook-typography--large-label {
+    @apply text-mov-label-lg ;
+}
+
+.storybook-typography--medium-label {
+    @apply text-mov-label-md ;
+}
+
+.storybook-typography--small-label {
+    @apply text-mov-label-sm ;
+}

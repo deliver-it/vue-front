@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.storybook-input--default {
+  @apply px-2.5 pb-2.5 pt-4 w-full text-sm text-color-primary  bg-transparent rounded-lg border-2  appearance-none  focus:outline-none focus:ring-0  ;
+}
+
+.storybook-input--invalid {
+  @apply block px-2.5 pb-2.5 pt-4 w-full text-sm text-color-primary  bg-transparent focus:ring-red-500 focus:border-red-500 rounded-lg border-2 appearance-none focus:outline-none focus:ring-0 focus:text-color-primary  hover:border-red-500 hover:border-2  
+}
+
+.storybook-input--valid {
+  @apply block px-2.5 pb-2.5 pt-4 w-full text-sm text-color-primary  bg-transparent focus:ring-cyan-300 focus:border-cyan-300 rounded-lg border-2  appearance-none  focus:outline-none focus:ring-0 focus:text-color-primary  hover:border-cyan-300 hover:border-2;
+}
+
+.label-input--valid {
+  @apply absolute text-sm bg-transparent text-color-primary duration-200 transform -translate-y-2 scale-75 top-2 z-10 origin-[0] px-2 peer-focus:px-2 peer-focus:text-color-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-2 left-1 rounded-lg;
+}
+.label-input--invalid {
+  @apply absolute text-sm bg-transparent text-red-500 duration-200 transform -translate-y-2 scale-75 top-2 z-10 origin-[0] px-2 peer-focus:px-2 peer-focus:text-color-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-2 left-1 rounded-lg;
+}
+
+.storybook-input--small {
+  @apply w-40;
+  font-size: 12px;
+
+}
+
+.storybook-input--medium {
+  @apply w-60;
+  font-size: 12px;
+
+}
+.storybook-input--large {
+  @apply w-72;
+  font-size: 16px;
+}
+
+

@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.label-select--valid {
+  @apply absolute  pt-1 text-sm bg-transparent text-color-primary  duration-200 transform -translate-y-2 scale-75 top-2  origin-[0] px-2 peer-focus:px-2 peer-focus:text-color-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-2 left-1 rounded-lg;
+}
+.label-select--invalid {
+  @apply absolute pt-1 text-sm bg-transparent text-color-primary duration-200 transform -translate-y-2 scale-75 top-2 origin-[0] px-2 peer-focus:px-2 peer-focus:text-color-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-2 left-1 rounded-lg;
+}
+.label-select--disabled {
+  @apply absolute pt-1 text-sm bg-transparent text-gray-400 duration-200 transform -translate-y-2 scale-75 top-2 origin-[0] px-2 peer-focus:px-2 peer-focus:text-color-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-2 left-1 rounded-lg;
+}
+
+.storybook-select--default {
+  @apply flex overflow-hidden  items-center text-black bg-transparent rounded-md border-2 pt-2 pr-2 pl-2 p-1.5;
+}
+
+.storybook-select--valid {
+  @apply flex  overflow-hidden hover:border-color-secondary hover:border-2 items-center text-black bg-transparent rounded-md border-2 pt-2 pr-2 pl-2 p-1.5;
+}
+.storybook-select--invalid {
+  @apply flex overflow-hidden hover:border-red-500  hover:border-2 items-center text-red-500 bg-transparent rounded-md border-2 pt-2 pr-2 pl-2 p-1.5;
+}
+
+.storybook-select--disabled {
+  @apply flex overflow-hidden  hover:border-2 items-center text-black bg-transparent rounded-md border-2 pt-2 pr-2 pl-2 p-1.5;
+}
+
+.storybook-select--super-small {
+  @apply w-14 h-10 text-xs;
+}
+
+.storybook-select--span-super-small {
+  @apply pt-0 text-sm text-left;
+  width: 19px;
+}
+
+.storybook-select--small {
+  @apply w-32 text-xs;
+}
+
+.storybook-select--span--small {
+  @apply pt-3 text-sm text-left;
+  width: 90px;
+}
+
+.storybook-select--medium {
+  @apply text-xs;
+  width: 166px;
+}
+
+.storybook-select--span--medium {
+  @apply pt-3 text-sm text-left w-32;
+}
+
+.storybook-select--large {
+  @apply w-60 text-sm;
+}
+.storybook-select--span--large {
+  @apply pt-3 text-sm text-left;
+  width: 202px;
+}

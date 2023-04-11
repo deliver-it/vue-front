@@ -1,0 +1,33 @@
+
+.storybook-search--default {
+  @apply  border-2  bg-transparent appearance-none   focus:outline-none focus:ring-0 hover:border-color-secondary focus:border-color-secondary block p-2.5   z-20 text-sm text-gray-900  rounded-md pr-8 ;
+}
+
+
+.storybook-search--small {
+  @apply w-40;
+  font-size: 14px;
+
+}
+.storybook-search--medium {
+  @apply w-56;
+  font-size: 14px;
+
+}
+.storybook-search--large {
+  @apply w-72;
+  font-size: 14px;
+}
+
+
+.storybook-select--button-small {
+  @apply absolute top-0 pt-3 pl-4 text-sm font-medium ml-28 ;
+}
+
+.storybook-select--button-medium {
+  @apply absolute top-0 pt-3 pl-4 text-sm font-medium ml-44 ;
+}
+
+.storybook-select--button-large {
+  @apply absolute top-0 pt-3 pl-4 text-sm font-medium ml-60 ;
+}
