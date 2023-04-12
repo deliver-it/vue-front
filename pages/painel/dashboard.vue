@@ -35,7 +35,7 @@
 
     </div>
 
-    <div class="flex m-3 ">
+    <div class="flex ">
       <Search default size="small" class="m-3"></Search>
       <Search default size="medium" class="m-3"></Search>
       <Search default size="large" class="m-3"></Search>
@@ -44,10 +44,6 @@
     </div>
     <div class="m-3 ">
       <Table></Table>
-    </div>
-
-    <div>
-      <Input  label="Teste" valid/>
     </div>
   </div>
 </template>
