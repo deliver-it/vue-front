@@ -1,14 +1,6 @@
-
-<template>
-<button type="button" :class="classes" @click="onClick"  >
-  <img  v-show="classes['storybook-button--plus']" src="../../../assets/icons/plus-icon.svg" /> 
-  {{ props.label }}
-</button>
-</template>
-
 <script setup lang="ts">
   import './button.css';
-  import { reactive, computed } from 'vue';
+  import { computed } from 'vue';
   
   const props = defineProps<Props>();
   
@@ -40,3 +32,11 @@ const onClick = () => {
 };
 
   </script>
+
+<template>
+  <button type="button" :class="classes" @click="onClick"  >
+    <img  v-show="classes['storybook-button--plus']" src="../../../assets/icons/plus-icon.svg" /> 
+    {{ props.label }}
+  </button>
+  </template>
+  

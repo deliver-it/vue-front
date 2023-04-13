@@ -34,7 +34,7 @@ const Login: Login = {
 };
 
 export default {
-  title: 'Pages/Home',
+  title: 'Movimentacao/Page',
   component: MyPage,
   parameters: {
     layout: 'fullscreen',

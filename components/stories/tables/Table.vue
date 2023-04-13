@@ -1,6 +1,7 @@
 <template>
     <div class="relative overflow-x-auto ">
       <table class="w-full text-sm text-left text-gray-500">
+        <caption>Tabela padrão do sistema, alterada para cada caso.</caption>
         <thead class="text-xs font-medium text-gray-700 border-b">
           <tr >
             <th scope="col" class="px-3 py-3">

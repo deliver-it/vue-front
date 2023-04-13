@@ -8,7 +8,7 @@
 
       {{ label??'Label' }}
       
-      <label :class="{'attentionPoint': !classes['storybook-input--invalid'],'attentionPointInvalid': classes['storybook-input--invalid']}">*</label>
+      
             
     </label>
   </div>
@@ -18,11 +18,12 @@
 
 <script setup lang="ts">
 import './input.css';
-import {  computed } from 'vue';
+import {  ref, computed } from 'vue';
   
 const props = defineProps<Props>();
 const inputValue = "";
 let isTyping = false;
+let borderStyle = ref('');
 
 const emits = defineEmits(["changeInput"]);
 const onChange = () => {
@@ -44,12 +45,20 @@ const onChange = () => {
 const classes = computed(() => ({
   'storybook-input--default': props.default,
   'storybook-input--valid': props.valid,
-  'storybook-input--invalid': !props.valid,
+  'storybook-input--invalid': props.invalid,
   [`storybook-input--${props.size || 'medium'}`]: true,
 }));
 
+if (!inputValue) {
+  borderStyle.value = 'label-input--valid';
+} else if (isTyping) {
+  borderStyle.value = 'label-input--invalid';
+} else {
+  borderStyle.value = 'label-input--default';
+}
+
 const style = computed(() => ({
   backgroundColor: props.backgroundColor,
-  border: !inputValue ? 'label-input--valid' : isTyping ? 'label-input--invalid' : 'label-input--default',
+  border: borderStyle.value,
 }));
 </script>
