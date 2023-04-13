@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Label from '../typography/Typography.vue';
-
+import { ref } from 'vue';
 
 const items = [
   { nome: 'Dashboard', icone: 'description', quantidade: 23 , path: 'dashboard' },
@@ -20,7 +20,7 @@ const props = defineProps({
 const emits = defineEmits(['update:isActive', 'value-updated'])
 const valueUpdate = ref('');
 
-function handleClick(path: String) {
+function handleClick(path: string) {
   emits('update:isActive', true)
   const value = path;
   emits('value-updated', value);
@@ -44,7 +44,6 @@ function loadPage(value?: string) {
         }" @click="loadPage(item.path)"
           class="flex w-full font-light h-11 top-3.5 cursor-pointer items-center truncate hover:bg-color-primary-opacity py-4 px-6  text-white outline-none  active:text-white focus:outline-none active:bg-color-primary-opacity active:text-inherit active:outline-none">
           <span class="mr-3  [&>svg]:h-4 [&>svg]:w-4 [&>svg]:text-gray-400 ">
-            <!-- <img src="../../../assets/description.svg" /> -->
             <img  :src="`/_nuxt/assets/icons/${item.icone}.svg`" />
           </span>
           <Label size="large-label" class="cursor-pointer" :label="item.nome"></Label>

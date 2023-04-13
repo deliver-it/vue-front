@@ -2,18 +2,18 @@
 <template>
   <div class="overflow-auto">
     <div class="flex m-5">
-      <dropdown />
+      <Dropdown />
     </div>
     <div class="m-3">
-      <ps-button :terciary="false" :plus="true" label="Botão Plus" size="medium" />
+      <psButton :terciary="false" :plus="true" label="Botão Plus" size="medium" />
     </div>
 
     <div class="flex pt-3 lg:flex-row">
       <div class="m-3">
-        <Datepicker size="small" required valid label="small " />
+        <Datepicker size="small"  valid label="small " />
       </div>
       <div class="m-3 ">
-        <Datepicker size="medium" required valid label="medium " />
+        <Datepicker size="medium"  valid label="medium " />
       </div>
       <div class="m-3 ">
         <Datepicker size="large" required valid label="large *" />
@@ -39,11 +39,11 @@
       <Search default size="small" class="m-3"></Search>
       <Search default size="medium" class="m-3"></Search>
       <Search default size="large" class="m-3"></Search>
-      <label class="m-3 font-light text-neutral-300 text-mov-body-md">Busca</label>
+      <Label class="m-3 font-light text-neutral-300 text-mov-body-md" label="Busca"></Label>
 
     </div>
-    <div class="m-3 ">
-      <Table></Table>
+    <div class="flex ">
+    <Input  type="default" :valid="true" label="Valor" />
     </div>
   </div>
 </template>
@@ -56,7 +56,6 @@ import psButton from '../../components/stories/button/Button.vue';
 import Datepicker from '../../components/stories/datepicker/Datepicker.vue';
 import Select from '../../components/stories/select/Select.vue';
 import Search from '../../components/stories/search-input/Search.vue';
-import Table from '../../components/stories/tables/Table.vue';
 import Input from '../../components/stories/input/Input.vue';
 
 const optionsSelect = ['Pré Processamento', 'Processamento', 'Concluído', 'Todos'];

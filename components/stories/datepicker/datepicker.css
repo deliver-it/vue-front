@@ -11,7 +11,7 @@
 }
 
 .storybook-datepicker--valid {
-  @apply block px-2 pb-1 pt-5 w-full text-sm text-black bg-transparent focus:ring-cyan-300 focus:border-cyan-300 rounded-md border-2 focus:outline-none focus:text-color-primary hover:border-cyan-300 hover:border-2;
+  @apply block px-2 pb-1 pt-5 w-full text-sm text-black bg-transparent focus:ring-color-primary focus:border-color-primary rounded-md border-2 focus:outline-none focus:text-color-primary hover:border-color-secondary hover:border-2;
 }
 
 .storybook-datepicker--invalid {

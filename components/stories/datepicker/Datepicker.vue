@@ -11,7 +11,7 @@
             {{ label ?? 'Label' }}
         </label>
 
-        <div class="absolute flex inset-y-0 right-0 ">
+        <div class="absolute inset-y-0 right-0 flex ">
             <img
            
             :class="{'storybook-datepicker--valid-icon': !classes['storybook-datepicker--invalid'], 
@@ -68,10 +68,6 @@ const classes = computed(() => ({
     'storybook-datepicker--valid': props.valid,
     'storybook-datepicker--invalid': props.invalid,
     [`storybook-datepicker--${props.size || 'medium'}`]: true,
-}));
-
-const style = computed(() => ({
-    border: !date ? 'label-datepicker--valid' : isTyping ? 'label-datepicker--invalid' : 'label-datepicker--default',
 }));
 
 

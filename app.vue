@@ -1,8 +1,7 @@
 
 <template>
-  <div>
-    
-    <!-- <pre>{{ story }}</pre> -->
+  <div>  
+  
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
